@@ -1,119 +1,197 @@
-[000:000][1032] (unity_context.cpp:125): Log initialized
-[000:000][1032] (unity_context.cpp:46): Renderer Type is kUnityGfxRendererD3D11
-[000:004][1032] (sora.cpp:162): Sora::Connect {"unity_version":"2021.2.11f1","signaling_url":["wss://sora.ikeilabsora.0am.jp/signaling"],"channel_id":"chair-control","client_id":"","metadata":"","role":"recvonly","enable_multistream":true,"multistream":true,"enable_spotlight":false,"spotlight":false,"spotlight_number":0,"spotlight_focus_rid":"","spotlight_unfocus_rid":"","enable_simulcast":false,"simulcast":false,"simulcast_rid":"","capturer_type":1,"unity_camera_texture":1662038676472,"video_capturer_device":"","video":false,"audio":true,"video_width":640,"video_height":480,"video_codec_type":"VP9","video_bit_rate":0,"unity_audio_input":true,"unity_audio_output":false,"audio_recording_device":"","audio_playout_device":"","audio_codec_type":"OPUS","audio_bit_rate":0,"enable_data_channel_signaling":true,"data_channel_signaling":true,"data_channel_signaling_timeout":180,"enable_ignore_disconnect_websocket":false,"ignore_disconnect_websocket":false,"disconnect_wait_timeout":5,"data_channels":[{"label":"#sora-devtools","direction":"recvonly","enable_ordered":true,"ordered":true,"enable_max_packet_life_time":false,"max_packet_life_time":0,"enable_max_retransmits":false,"max_retransmits":0,"enable_protocol":false,"protocol":"","enable_compress":true,"compress":false}],"insecure":false,"bundle_id":"","proxy_url":"","proxy_username":"","proxy_password":"","proxy_agent":""}
-[000:168][1032] (nvcodec_h264_encoder.cpp:556): sora::NvCodecH264EncoderImpl::CreateEncoder framerate:30 bitrate_bps:100000 maxBitRate:500000
-[000:287][1032] (audio_processing_impl.cc:291): Injected APM submodules:
+[000:000][1848] (unity_context.cpp:125): Log initialized
+[000:000][1848] (unity_context.cpp:46): Renderer Type is kUnityGfxRendererD3D11
+[000:004][1848] (sora.cpp:162): Sora::Connect {"unity_version":"2021.2.11f1","signaling_url":["ws://192.168.11.64:5000/signaling"],"channel_id":"chair-control","client_id":"","metadata":"","role":"recvonly","enable_multistream":true,"multistream":true,"enable_spotlight":false,"spotlight":false,"spotlight_number":0,"spotlight_focus_rid":"","spotlight_unfocus_rid":"","enable_simulcast":false,"simulcast":false,"simulcast_rid":"","capturer_type":1,"unity_camera_texture":1949573848568,"video_capturer_device":"","video":false,"audio":true,"video_width":640,"video_height":480,"video_codec_type":"VP9","video_bit_rate":0,"unity_audio_input":true,"unity_audio_output":false,"audio_recording_device":"","audio_playout_device":"","audio_codec_type":"OPUS","audio_bit_rate":0,"enable_data_channel_signaling":true,"data_channel_signaling":true,"data_channel_signaling_timeout":180,"enable_ignore_disconnect_websocket":false,"ignore_disconnect_websocket":false,"disconnect_wait_timeout":5,"data_channels":[{"label":"#sora-devtools","direction":"recvonly","enable_ordered":true,"ordered":true,"enable_max_packet_life_time":false,"max_packet_life_time":0,"enable_max_retransmits":false,"max_retransmits":0,"enable_protocol":false,"protocol":"","enable_compress":true,"compress":false}],"insecure":false,"bundle_id":"","proxy_url":"","proxy_username":"","proxy_password":"","proxy_agent":""}
+[000:201][1848] (nvcodec_h264_encoder.cpp:556): sora::NvCodecH264EncoderImpl::CreateEncoder framerate:30 bitrate_bps:100000 maxBitRate:500000
+[000:395][1848] (audio_processing_impl.cc:291): Injected APM submodules:
 Echo control factory: 0
 Echo detector: 0
 Capture analyzer: 0
 Capture post processor: 0
 Render pre processor: 0
-[000:287][1032] (audio_processing_impl.cc:300): Denormal disabler: supported
-[000:287][1032] (webrtc_voice_engine.cc:314): WebRtcVoiceEngine::WebRtcVoiceEngine
-[000:287][18316] (webrtc_voice_engine.cc:336): WebRtcVoiceEngine::Init
-[000:288][18316] (unity_audio_device.h:86): Init
-[000:288][18316] (audio_device_buffer.cc:65): AudioDeviceBuffer::ctor
-[000:288][18316] (audio_device_buffer.cc:65): AudioDeviceBuffer::ctor
-[000:289][18316] (unity_audio_device.h:77): RegisterAudioCallback
-[000:290][18316] (webrtc_voice_engine.cc:428): WebRtcVoiceEngine::ApplyOptions: AudioOptions {aec: 1, agc: 1, ns: 1, hf: 1, swap: 0, audio_jitter_buffer_max_packets: 200, audio_jitter_buffer_fast_accelerate: 0, audio_jitter_buffer_min_delay_ms: 0, audio_jitter_buffer_enable_rtx_handling: 0, }
-[000:290][18316] (webrtc_voice_engine.cc:529): Stereo swapping enabled? 0
-[000:290][18316] (webrtc_voice_engine.cc:534): NetEq capacity is 200
-[000:290][18316] (webrtc_voice_engine.cc:540): NetEq fast mode? 0
-[000:290][18316] (webrtc_voice_engine.cc:546): NetEq minimum delay is 0
-[000:290][18316] (webrtc_voice_engine.cc:552): NetEq handle reordered packets? 0
-[000:290][18316] (webrtc_voice_engine.cc:594): NS set to 1
-[000:290][18316] (audio_processing_impl.cc:506): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 1, level: High }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, dry_run: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, vad_reset_period_ms: 1500, adjacent_speech_frames_threshold: 12, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50}}
-[000:290][18316] (transparent_mode.cc:239): AEC3 Transparent Mode: Legacy
-[000:290][18316] (echo_canceller3.cc:795): AEC3 created with sample rate: 16000 Hz, num render channels: 1, num capture channels: 1
-[000:290][18316] (clipping_predictor.cc:357): [agc] Clipping prediction disabled.
-[000:290][18316] (agc_manager_direct.cc:496): [agc] Min mic level: 12 (overridden: no)
-[000:290][1032] (sora.cpp:308): Start Signaling: cc={"unity_version":"2021.2.11f1","signaling_url":["wss://sora.ikeilabsora.0am.jp/signaling"],"channel_id":"chair-control","client_id":"","metadata":"","role":"recvonly","enable_multistream":true,"multistream":true,"enable_spotlight":false,"spotlight":false,"spotlight_number":0,"spotlight_focus_rid":"","spotlight_unfocus_rid":"","enable_simulcast":false,"simulcast":false,"simulcast_rid":"","capturer_type":1,"unity_camera_texture":1662038676472,"video_capturer_device":"","video":false,"audio":true,"video_width":640,"video_height":480,"video_codec_type":"VP9","video_bit_rate":0,"unity_audio_input":true,"unity_audio_output":false,"audio_recording_device":"","audio_playout_device":"","audio_codec_type":"OPUS","audio_bit_rate":0,"enable_data_channel_signaling":true,"data_channel_signaling":true,"data_channel_signaling_timeout":180,"enable_ignore_disconnect_websocket":false,"ignore_disconnect_websocket":false,"disconnect_wait_timeout":5,"data_channels":[{"label":"#sora-devtools","direction":"recvonly","enable_ordered":true,"ordered":true,"enable_max_packet_life_time":false,"max_packet_life_time":0,"enable_max_retransmits":false,"max_retransmits":0,"enable_protocol":false,"protocol":"","enable_compress":true,"compress":false}],"insecure":false,"bundle_id":"","proxy_url":"","proxy_username":"","proxy_password":"","proxy_agent":""}
-[000:290][1032] (sora_signaling.cpp:37): SoraSignaling::Connect
-[000:290][7240] (sora.cpp:403): io_context started
-[000:313][7240] (websocket.cpp:185): host=sora.ikeilabsora.0am.jp:443 resolved=13.71.140.45:443
-[021:368][7240] (sora_signaling.cpp:617): OnConnect url=wss://sora.ikeilabsora.0am.jp/signaling
-[021:368][7240] (sora_signaling.cpp:629): Failed Websocket handshake: system:10060
-[021:368][7240] (sora_signaling.cpp:1140): Failed to Disconnect: message=Failed Websocket handshake: last_ec=接続済みの呼び出し先が一定の時間を過ぎても正しく応答しなかったため、接続できませんでした。または接続済みのホストが応答しなかったため、確立された接続は失敗しました。 last_url=wss://sora.ikeilabsora.0am.jp/signaling
-[021:368][7240] (websocket.cpp:92): Websocket::~Websocket this=416c74a0
-[021:368][7240] (data_channel.cpp:19): dtor DataChannel
-[021:368][7240] (sora.cpp:666): OnDisconnect: Failed Websocket handshake: last_ec=接続済みの呼び出し先が一定の時間を過ぎても正しく応答しなかったため、接続できませんでした。または接続済みのホストが応答しなかったため、確立された接続は失敗しました。 last_url=wss://sora.ikeilabsora.0am.jp/signaling
-[021:368][7240] (sora.cpp:405): io_context finished
-[021:368][7240] (thread.cc:706): Message to Sora IO Thread took 21078ms to dispatch. Posted from: PostTask@../../webrtc/webrtc/src/rtc_base/thread.cc:1095
-[893:454][1032] (sora.cpp:162): Sora::Connect {"unity_version":"2021.2.11f1","signaling_url":["wss://sora.ikeilabsora.0am.jp/signaling"],"channel_id":"chair-control","client_id":"","metadata":"","role":"recvonly","enable_multistream":true,"multistream":true,"enable_spotlight":false,"spotlight":false,"spotlight_number":0,"spotlight_focus_rid":"","spotlight_unfocus_rid":"","enable_simulcast":false,"simulcast":false,"simulcast_rid":"","capturer_type":1,"unity_camera_texture":1662038609272,"video_capturer_device":"","video":false,"audio":true,"video_width":640,"video_height":480,"video_codec_type":"VP9","video_bit_rate":0,"unity_audio_input":true,"unity_audio_output":false,"audio_recording_device":"","audio_playout_device":"","audio_codec_type":"OPUS","audio_bit_rate":0,"enable_data_channel_signaling":true,"data_channel_signaling":true,"data_channel_signaling_timeout":180,"enable_ignore_disconnect_websocket":false,"ignore_disconnect_websocket":false,"disconnect_wait_timeout":5,"data_channels":[{"label":"#sora-devtools","direction":"recvonly","enable_ordered":true,"ordered":true,"enable_max_packet_life_time":false,"max_packet_life_time":0,"enable_max_retransmits":false,"max_retransmits":0,"enable_protocol":false,"protocol":"","enable_compress":true,"compress":false}],"insecure":false,"bundle_id":"","proxy_url":"","proxy_username":"","proxy_password":"","proxy_agent":""}
-[893:586][1032] (nvcodec_h264_encoder.cpp:556): sora::NvCodecH264EncoderImpl::CreateEncoder framerate:30 bitrate_bps:100000 maxBitRate:500000
-[893:701][1032] (audio_processing_impl.cc:291): Injected APM submodules:
+[000:395][1848] (audio_processing_impl.cc:300): Denormal disabler: supported
+[000:396][1848] (webrtc_voice_engine.cc:314): WebRtcVoiceEngine::WebRtcVoiceEngine
+[000:396][4136] (webrtc_voice_engine.cc:336): WebRtcVoiceEngine::Init
+[000:401][4136] (unity_audio_device.h:86): Init
+[000:401][4136] (audio_device_buffer.cc:65): AudioDeviceBuffer::ctor
+[000:401][4136] (audio_device_buffer.cc:65): AudioDeviceBuffer::ctor
+[000:404][4136] (unity_audio_device.h:77): RegisterAudioCallback
+[000:404][4136] (webrtc_voice_engine.cc:428): WebRtcVoiceEngine::ApplyOptions: AudioOptions {aec: 1, agc: 1, ns: 1, hf: 1, swap: 0, audio_jitter_buffer_max_packets: 200, audio_jitter_buffer_fast_accelerate: 0, audio_jitter_buffer_min_delay_ms: 0, audio_jitter_buffer_enable_rtx_handling: 0, }
+[000:404][4136] (webrtc_voice_engine.cc:529): Stereo swapping enabled? 0
+[000:404][4136] (webrtc_voice_engine.cc:534): NetEq capacity is 200
+[000:404][4136] (webrtc_voice_engine.cc:540): NetEq fast mode? 0
+[000:404][4136] (webrtc_voice_engine.cc:546): NetEq minimum delay is 0
+[000:404][4136] (webrtc_voice_engine.cc:552): NetEq handle reordered packets? 0
+[000:404][4136] (webrtc_voice_engine.cc:594): NS set to 1
+[000:405][4136] (audio_processing_impl.cc:506): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 1, level: High }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, dry_run: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, vad_reset_period_ms: 1500, adjacent_speech_frames_threshold: 12, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50}}
+[000:407][4136] (transparent_mode.cc:239): AEC3 Transparent Mode: Legacy
+[000:407][4136] (echo_canceller3.cc:795): AEC3 created with sample rate: 16000 Hz, num render channels: 1, num capture channels: 1
+[000:408][4136] (clipping_predictor.cc:357): [agc] Clipping prediction disabled.
+[000:408][4136] (agc_manager_direct.cc:496): [agc] Min mic level: 12 (overridden: no)
+[000:409][1848] (sora.cpp:308): Start Signaling: cc={"unity_version":"2021.2.11f1","signaling_url":["ws://192.168.11.64:5000/signaling"],"channel_id":"chair-control","client_id":"","metadata":"","role":"recvonly","enable_multistream":true,"multistream":true,"enable_spotlight":false,"spotlight":false,"spotlight_number":0,"spotlight_focus_rid":"","spotlight_unfocus_rid":"","enable_simulcast":false,"simulcast":false,"simulcast_rid":"","capturer_type":1,"unity_camera_texture":1949573848568,"video_capturer_device":"","video":false,"audio":true,"video_width":640,"video_height":480,"video_codec_type":"VP9","video_bit_rate":0,"unity_audio_input":true,"unity_audio_output":false,"audio_recording_device":"","audio_playout_device":"","audio_codec_type":"OPUS","audio_bit_rate":0,"enable_data_channel_signaling":true,"data_channel_signaling":true,"data_channel_signaling_timeout":180,"enable_ignore_disconnect_websocket":false,"ignore_disconnect_websocket":false,"disconnect_wait_timeout":5,"data_channels":[{"label":"#sora-devtools","direction":"recvonly","enable_ordered":true,"ordered":true,"enable_max_packet_life_time":false,"max_packet_life_time":0,"enable_max_retransmits":false,"max_retransmits":0,"enable_protocol":false,"protocol":"","enable_compress":true,"compress":false}],"insecure":false,"bundle_id":"","proxy_url":"","proxy_username":"","proxy_password":"","proxy_agent":""}
+[000:410][1848] (sora_signaling.cpp:37): SoraSignaling::Connect
+[000:410][11916] (sora.cpp:403): io_context started
+[000:413][11916] (websocket.cpp:185): host=192.168.11.64:5000 resolved=192.168.11.64:5000
+[014:772][1848] (sora.cpp:162): Sora::Connect {"unity_version":"2021.2.11f1","signaling_url":["ws://192.168.11.64:5000/signaling"],"channel_id":"chair-control","client_id":"","metadata":"","role":"recvonly","enable_multistream":true,"multistream":true,"enable_spotlight":false,"spotlight":false,"spotlight_number":0,"spotlight_focus_rid":"","spotlight_unfocus_rid":"","enable_simulcast":false,"simulcast":false,"simulcast_rid":"","capturer_type":1,"unity_camera_texture":1950480350584,"video_capturer_device":"","video":false,"audio":true,"video_width":640,"video_height":480,"video_codec_type":"VP9","video_bit_rate":0,"unity_audio_input":true,"unity_audio_output":false,"audio_recording_device":"","audio_playout_device":"","audio_codec_type":"OPUS","audio_bit_rate":0,"enable_data_channel_signaling":true,"data_channel_signaling":true,"data_channel_signaling_timeout":180,"enable_ignore_disconnect_websocket":false,"ignore_disconnect_websocket":false,"disconnect_wait_timeout":5,"data_channels":[{"label":"#sora-devtools","direction":"recvonly","enable_ordered":true,"ordered":true,"enable_max_packet_life_time":false,"max_packet_life_time":0,"enable_max_retransmits":false,"max_retransmits":0,"enable_protocol":false,"protocol":"","enable_compress":true,"compress":false}],"insecure":false,"bundle_id":"","proxy_url":"","proxy_username":"","proxy_password":"","proxy_agent":""}
+[014:878][1848] (nvcodec_h264_encoder.cpp:556): sora::NvCodecH264EncoderImpl::CreateEncoder framerate:30 bitrate_bps:100000 maxBitRate:500000
+[015:015][1848] (audio_processing_impl.cc:291): Injected APM submodules:
 Echo control factory: 0
 Echo detector: 0
 Capture analyzer: 0
 Capture post processor: 0
 Render pre processor: 0
-[893:701][1032] (audio_processing_impl.cc:300): Denormal disabler: supported
-[893:701][1032] (webrtc_voice_engine.cc:314): WebRtcVoiceEngine::WebRtcVoiceEngine
-[893:701][18000] (webrtc_voice_engine.cc:336): WebRtcVoiceEngine::Init
-[893:702][18000] (unity_audio_device.h:86): Init
-[893:702][18000] (audio_device_buffer.cc:65): AudioDeviceBuffer::ctor
-[893:702][18000] (audio_device_buffer.cc:65): AudioDeviceBuffer::ctor
-[893:705][18000] (unity_audio_device.h:77): RegisterAudioCallback
-[893:705][18000] (webrtc_voice_engine.cc:428): WebRtcVoiceEngine::ApplyOptions: AudioOptions {aec: 1, agc: 1, ns: 1, hf: 1, swap: 0, audio_jitter_buffer_max_packets: 200, audio_jitter_buffer_fast_accelerate: 0, audio_jitter_buffer_min_delay_ms: 0, audio_jitter_buffer_enable_rtx_handling: 0, }
-[893:705][18000] (webrtc_voice_engine.cc:529): Stereo swapping enabled? 0
-[893:705][18000] (webrtc_voice_engine.cc:534): NetEq capacity is 200
-[893:705][18000] (webrtc_voice_engine.cc:540): NetEq fast mode? 0
-[893:705][18000] (webrtc_voice_engine.cc:546): NetEq minimum delay is 0
-[893:705][18000] (webrtc_voice_engine.cc:552): NetEq handle reordered packets? 0
-[893:705][18000] (webrtc_voice_engine.cc:594): NS set to 1
-[893:705][18000] (audio_processing_impl.cc:506): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 1, level: High }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, dry_run: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, vad_reset_period_ms: 1500, adjacent_speech_frames_threshold: 12, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50}}
-[893:705][18000] (transparent_mode.cc:239): AEC3 Transparent Mode: Legacy
-[893:705][18000] (echo_canceller3.cc:795): AEC3 created with sample rate: 16000 Hz, num render channels: 1, num capture channels: 1
-[893:705][18000] (clipping_predictor.cc:357): [agc] Clipping prediction disabled.
-[893:705][18000] (agc_manager_direct.cc:496): [agc] Min mic level: 12 (overridden: no)
-[893:705][1032] (sora.cpp:308): Start Signaling: cc={"unity_version":"2021.2.11f1","signaling_url":["wss://sora.ikeilabsora.0am.jp/signaling"],"channel_id":"chair-control","client_id":"","metadata":"","role":"recvonly","enable_multistream":true,"multistream":true,"enable_spotlight":false,"spotlight":false,"spotlight_number":0,"spotlight_focus_rid":"","spotlight_unfocus_rid":"","enable_simulcast":false,"simulcast":false,"simulcast_rid":"","capturer_type":1,"unity_camera_texture":1662038609272,"video_capturer_device":"","video":false,"audio":true,"video_width":640,"video_height":480,"video_codec_type":"VP9","video_bit_rate":0,"unity_audio_input":true,"unity_audio_output":false,"audio_recording_device":"","audio_playout_device":"","audio_codec_type":"OPUS","audio_bit_rate":0,"enable_data_channel_signaling":true,"data_channel_signaling":true,"data_channel_signaling_timeout":180,"enable_ignore_disconnect_websocket":false,"ignore_disconnect_websocket":false,"disconnect_wait_timeout":5,"data_channels":[{"label":"#sora-devtools","direction":"recvonly","enable_ordered":true,"ordered":true,"enable_max_packet_life_time":false,"max_packet_life_time":0,"enable_max_retransmits":false,"max_retransmits":0,"enable_protocol":false,"protocol":"","enable_compress":true,"compress":false}],"insecure":false,"bundle_id":"","proxy_url":"","proxy_username":"","proxy_password":"","proxy_agent":""}
-[893:705][1032] (sora_signaling.cpp:37): SoraSignaling::Connect
-[893:705][4272] (sora.cpp:403): io_context started
-[893:709][4272] (websocket.cpp:185): host=sora.ikeilabsora.0am.jp:443 resolved=13.71.140.45:443
-[914:757][4272] (sora_signaling.cpp:617): OnConnect url=wss://sora.ikeilabsora.0am.jp/signaling
-[914:757][4272] (sora_signaling.cpp:629): Failed Websocket handshake: system:10060
-[914:757][4272] (sora_signaling.cpp:1140): Failed to Disconnect: message=Failed Websocket handshake: last_ec=接続済みの呼び出し先が一定の時間を過ぎても正しく応答しなかったため、接続できませんでした。または接続済みのホストが応答しなかったため、確立された接続は失敗しました。 last_url=wss://sora.ikeilabsora.0am.jp/signaling
-[914:757][4272] (websocket.cpp:92): Websocket::~Websocket this=ed536ec0
-[914:757][4272] (data_channel.cpp:19): dtor DataChannel
-[914:757][4272] (sora.cpp:666): OnDisconnect: Failed Websocket handshake: last_ec=接続済みの呼び出し先が一定の時間を過ぎても正しく応答しなかったため、接続できませんでした。または接続済みのホストが応答しなかったため、確立された接続は失敗しました。 last_url=wss://sora.ikeilabsora.0am.jp/signaling
-[914:757][4272] (sora.cpp:405): io_context finished
-[914:757][4272] (thread.cc:706): Message to Sora IO Thread took 21052ms to dispatch. Posted from: PostTask@../../webrtc/webrtc/src/rtc_base/thread.cc:1095
-[1022:752][1032] (sora.cpp:162): Sora::Connect {"unity_version":"2021.2.11f1","signaling_url":["wss://sora.ikeilabsora.0am.jp/signaling"],"channel_id":"chair-control","client_id":"","metadata":"","role":"recvonly","enable_multistream":true,"multistream":true,"enable_spotlight":false,"spotlight":false,"spotlight_number":0,"spotlight_focus_rid":"","spotlight_unfocus_rid":"","enable_simulcast":false,"simulcast":false,"simulcast_rid":"","capturer_type":1,"unity_camera_texture":1662038652280,"video_capturer_device":"","video":false,"audio":true,"video_width":640,"video_height":480,"video_codec_type":"VP9","video_bit_rate":0,"unity_audio_input":true,"unity_audio_output":false,"audio_recording_device":"","audio_playout_device":"","audio_codec_type":"OPUS","audio_bit_rate":0,"enable_data_channel_signaling":true,"data_channel_signaling":true,"data_channel_signaling_timeout":180,"enable_ignore_disconnect_websocket":false,"ignore_disconnect_websocket":false,"disconnect_wait_timeout":5,"data_channels":[{"label":"#sora-devtools","direction":"recvonly","enable_ordered":true,"ordered":true,"enable_max_packet_life_time":false,"max_packet_life_time":0,"enable_max_retransmits":false,"max_retransmits":0,"enable_protocol":false,"protocol":"","enable_compress":true,"compress":false}],"insecure":false,"bundle_id":"","proxy_url":"","proxy_username":"","proxy_password":"","proxy_agent":""}
-[1022:858][1032] (nvcodec_h264_encoder.cpp:556): sora::NvCodecH264EncoderImpl::CreateEncoder framerate:30 bitrate_bps:100000 maxBitRate:500000
-[1022:971][1032] (audio_processing_impl.cc:291): Injected APM submodules:
+[015:015][1848] (audio_processing_impl.cc:300): Denormal disabler: supported
+[015:015][1848] (webrtc_voice_engine.cc:314): WebRtcVoiceEngine::WebRtcVoiceEngine
+[015:015][12644] (webrtc_voice_engine.cc:336): WebRtcVoiceEngine::Init
+[015:016][12644] (unity_audio_device.h:86): Init
+[015:016][12644] (audio_device_buffer.cc:65): AudioDeviceBuffer::ctor
+[015:016][12644] (audio_device_buffer.cc:65): AudioDeviceBuffer::ctor
+[015:017][12644] (unity_audio_device.h:77): RegisterAudioCallback
+[015:017][12644] (webrtc_voice_engine.cc:428): WebRtcVoiceEngine::ApplyOptions: AudioOptions {aec: 1, agc: 1, ns: 1, hf: 1, swap: 0, audio_jitter_buffer_max_packets: 200, audio_jitter_buffer_fast_accelerate: 0, audio_jitter_buffer_min_delay_ms: 0, audio_jitter_buffer_enable_rtx_handling: 0, }
+[015:017][12644] (webrtc_voice_engine.cc:529): Stereo swapping enabled? 0
+[015:017][12644] (webrtc_voice_engine.cc:534): NetEq capacity is 200
+[015:017][12644] (webrtc_voice_engine.cc:540): NetEq fast mode? 0
+[015:017][12644] (webrtc_voice_engine.cc:546): NetEq minimum delay is 0
+[015:017][12644] (webrtc_voice_engine.cc:552): NetEq handle reordered packets? 0
+[015:017][12644] (webrtc_voice_engine.cc:594): NS set to 1
+[015:017][12644] (audio_processing_impl.cc:506): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 1, level: High }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, dry_run: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, vad_reset_period_ms: 1500, adjacent_speech_frames_threshold: 12, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50}}
+[015:018][12644] (transparent_mode.cc:239): AEC3 Transparent Mode: Legacy
+[015:018][12644] (echo_canceller3.cc:795): AEC3 created with sample rate: 16000 Hz, num render channels: 1, num capture channels: 1
+[015:018][12644] (clipping_predictor.cc:357): [agc] Clipping prediction disabled.
+[015:018][12644] (agc_manager_direct.cc:496): [agc] Min mic level: 12 (overridden: no)
+[015:018][1848] (sora.cpp:308): Start Signaling: cc={"unity_version":"2021.2.11f1","signaling_url":["ws://192.168.11.64:5000/signaling"],"channel_id":"chair-control","client_id":"","metadata":"","role":"recvonly","enable_multistream":true,"multistream":true,"enable_spotlight":false,"spotlight":false,"spotlight_number":0,"spotlight_focus_rid":"","spotlight_unfocus_rid":"","enable_simulcast":false,"simulcast":false,"simulcast_rid":"","capturer_type":1,"unity_camera_texture":1950480350584,"video_capturer_device":"","video":false,"audio":true,"video_width":640,"video_height":480,"video_codec_type":"VP9","video_bit_rate":0,"unity_audio_input":true,"unity_audio_output":false,"audio_recording_device":"","audio_playout_device":"","audio_codec_type":"OPUS","audio_bit_rate":0,"enable_data_channel_signaling":true,"data_channel_signaling":true,"data_channel_signaling_timeout":180,"enable_ignore_disconnect_websocket":false,"ignore_disconnect_websocket":false,"disconnect_wait_timeout":5,"data_channels":[{"label":"#sora-devtools","direction":"recvonly","enable_ordered":true,"ordered":true,"enable_max_packet_life_time":false,"max_packet_life_time":0,"enable_max_retransmits":false,"max_retransmits":0,"enable_protocol":false,"protocol":"","enable_compress":true,"compress":false}],"insecure":false,"bundle_id":"","proxy_url":"","proxy_username":"","proxy_password":"","proxy_agent":""}
+[015:018][1848] (sora_signaling.cpp:37): SoraSignaling::Connect
+[015:018][3412] (sora.cpp:403): io_context started
+[015:018][3412] (websocket.cpp:185): host=192.168.11.64:5000 resolved=192.168.11.64:5000
+[021:455][11916] (sora_signaling.cpp:617): OnConnect url=ws://192.168.11.64:5000/signaling
+[021:455][11916] (sora_signaling.cpp:629): Failed Websocket handshake: system:10060
+[021:459][11916] (sora_signaling.cpp:1140): Failed to Disconnect: message=Failed Websocket handshake: last_ec=接続済みの呼び出し先が一定の時間を過ぎても正しく応答しなかったため、接続できませんでした。または接続済みのホストが応答しなかったため、確立された接続は失敗しました。 last_url=ws://192.168.11.64:5000/signaling
+[021:459][11916] (websocket.cpp:92): Websocket::~Websocket this=21c0ef20
+[021:460][11916] (data_channel.cpp:19): dtor DataChannel
+[021:460][11916] (sora.cpp:666): OnDisconnect: Failed Websocket handshake: last_ec=接続済みの呼び出し先が一定の時間を過ぎても正しく応答しなかったため、接続できませんでした。または接続済みのホストが応答しなかったため、確立された接続は失敗しました。 last_url=ws://192.168.11.64:5000/signaling
+[021:460][11916] (sora.cpp:405): io_context finished
+[021:460][11916] (thread.cc:706): Message to Sora IO Thread took 21050ms to dispatch. Posted from: PostTask@../../webrtc/webrtc/src/rtc_base/thread.cc:1095
+[036:066][3412] (sora_signaling.cpp:617): OnConnect url=ws://192.168.11.64:5000/signaling
+[036:066][3412] (sora_signaling.cpp:629): Failed Websocket handshake: system:10060
+[036:066][3412] (sora_signaling.cpp:1140): Failed to Disconnect: message=Failed Websocket handshake: last_ec=接続済みの呼び出し先が一定の時間を過ぎても正しく応答しなかったため、接続できませんでした。または接続済みのホストが応答しなかったため、確立された接続は失敗しました。 last_url=ws://192.168.11.64:5000/signaling
+[036:066][3412] (websocket.cpp:92): Websocket::~Websocket this=f938d720
+[036:066][3412] (data_channel.cpp:19): dtor DataChannel
+[036:066][3412] (sora.cpp:666): OnDisconnect: Failed Websocket handshake: last_ec=接続済みの呼び出し先が一定の時間を過ぎても正しく応答しなかったため、接続できませんでした。または接続済みのホストが応答しなかったため、確立された接続は失敗しました。 last_url=ws://192.168.11.64:5000/signaling
+[036:066][3412] (sora.cpp:405): io_context finished
+[036:066][3412] (thread.cc:706): Message to Sora IO Thread took 21048ms to dispatch. Posted from: PostTask@../../webrtc/webrtc/src/rtc_base/thread.cc:1095
+[067:747][1848] (sora.cpp:162): Sora::Connect {"unity_version":"2021.2.11f1","signaling_url":["ws://192.168.11.64:5000/signaling"],"channel_id":"chair-control","client_id":"","metadata":"","role":"recvonly","enable_multistream":true,"multistream":true,"enable_spotlight":false,"spotlight":false,"spotlight_number":0,"spotlight_focus_rid":"","spotlight_unfocus_rid":"","enable_simulcast":false,"simulcast":false,"simulcast_rid":"","capturer_type":1,"unity_camera_texture":1950480341176,"video_capturer_device":"","video":false,"audio":true,"video_width":640,"video_height":480,"video_codec_type":"VP9","video_bit_rate":0,"unity_audio_input":true,"unity_audio_output":false,"audio_recording_device":"","audio_playout_device":"","audio_codec_type":"OPUS","audio_bit_rate":0,"enable_data_channel_signaling":true,"data_channel_signaling":true,"data_channel_signaling_timeout":180,"enable_ignore_disconnect_websocket":false,"ignore_disconnect_websocket":false,"disconnect_wait_timeout":5,"data_channels":[{"label":"#sora-devtools","direction":"recvonly","enable_ordered":true,"ordered":true,"enable_max_packet_life_time":false,"max_packet_life_time":0,"enable_max_retransmits":false,"max_retransmits":0,"enable_protocol":false,"protocol":"","enable_compress":true,"compress":false}],"insecure":false,"bundle_id":"","proxy_url":"","proxy_username":"","proxy_password":"","proxy_agent":""}
+[067:856][1848] (nvcodec_h264_encoder.cpp:556): sora::NvCodecH264EncoderImpl::CreateEncoder framerate:30 bitrate_bps:100000 maxBitRate:500000
+[067:992][1848] (audio_processing_impl.cc:291): Injected APM submodules:
 Echo control factory: 0
 Echo detector: 0
 Capture analyzer: 0
 Capture post processor: 0
 Render pre processor: 0
-[1022:971][1032] (audio_processing_impl.cc:300): Denormal disabler: supported
-[1022:971][1032] (webrtc_voice_engine.cc:314): WebRtcVoiceEngine::WebRtcVoiceEngine
-[1022:971][15372] (webrtc_voice_engine.cc:336): WebRtcVoiceEngine::Init
-[1022:972][15372] (unity_audio_device.h:86): Init
-[1022:972][15372] (audio_device_buffer.cc:65): AudioDeviceBuffer::ctor
-[1022:972][15372] (audio_device_buffer.cc:65): AudioDeviceBuffer::ctor
-[1022:973][15372] (unity_audio_device.h:77): RegisterAudioCallback
-[1022:973][15372] (webrtc_voice_engine.cc:428): WebRtcVoiceEngine::ApplyOptions: AudioOptions {aec: 1, agc: 1, ns: 1, hf: 1, swap: 0, audio_jitter_buffer_max_packets: 200, audio_jitter_buffer_fast_accelerate: 0, audio_jitter_buffer_min_delay_ms: 0, audio_jitter_buffer_enable_rtx_handling: 0, }
-[1022:973][15372] (webrtc_voice_engine.cc:529): Stereo swapping enabled? 0
-[1022:973][15372] (webrtc_voice_engine.cc:534): NetEq capacity is 200
-[1022:973][15372] (webrtc_voice_engine.cc:540): NetEq fast mode? 0
-[1022:973][15372] (webrtc_voice_engine.cc:546): NetEq minimum delay is 0
-[1022:973][15372] (webrtc_voice_engine.cc:552): NetEq handle reordered packets? 0
-[1022:973][15372] (webrtc_voice_engine.cc:594): NS set to 1
-[1022:973][15372] (audio_processing_impl.cc:506): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 1, level: High }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, dry_run: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, vad_reset_period_ms: 1500, adjacent_speech_frames_threshold: 12, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50}}
-[1022:973][15372] (transparent_mode.cc:239): AEC3 Transparent Mode: Legacy
-[1022:973][15372] (echo_canceller3.cc:795): AEC3 created with sample rate: 16000 Hz, num render channels: 1, num capture channels: 1
-[1022:973][15372] (clipping_predictor.cc:357): [agc] Clipping prediction disabled.
-[1022:973][15372] (agc_manager_direct.cc:496): [agc] Min mic level: 12 (overridden: no)
-[1022:974][1032] (sora.cpp:308): Start Signaling: cc={"unity_version":"2021.2.11f1","signaling_url":["wss://sora.ikeilabsora.0am.jp/signaling"],"channel_id":"chair-control","client_id":"","metadata":"","role":"recvonly","enable_multistream":true,"multistream":true,"enable_spotlight":false,"spotlight":false,"spotlight_number":0,"spotlight_focus_rid":"","spotlight_unfocus_rid":"","enable_simulcast":false,"simulcast":false,"simulcast_rid":"","capturer_type":1,"unity_camera_texture":1662038652280,"video_capturer_device":"","video":false,"audio":true,"video_width":640,"video_height":480,"video_codec_type":"VP9","video_bit_rate":0,"unity_audio_input":true,"unity_audio_output":false,"audio_recording_device":"","audio_playout_device":"","audio_codec_type":"OPUS","audio_bit_rate":0,"enable_data_channel_signaling":true,"data_channel_signaling":true,"data_channel_signaling_timeout":180,"enable_ignore_disconnect_websocket":false,"ignore_disconnect_websocket":false,"disconnect_wait_timeout":5,"data_channels":[{"label":"#sora-devtools","direction":"recvonly","enable_ordered":true,"ordered":true,"enable_max_packet_life_time":false,"max_packet_life_time":0,"enable_max_retransmits":false,"max_retransmits":0,"enable_protocol":false,"protocol":"","enable_compress":true,"compress":false}],"insecure":false,"bundle_id":"","proxy_url":"","proxy_username":"","proxy_password":"","proxy_agent":""}
-[1022:974][1032] (sora_signaling.cpp:37): SoraSignaling::Connect
-[1022:974][5420] (sora.cpp:403): io_context started
-[1022:989][5420] (websocket.cpp:185): host=sora.ikeilabsora.0am.jp:443 resolved=13.71.140.45:443
-[1044:046][5420] (sora_signaling.cpp:617): OnConnect url=wss://sora.ikeilabsora.0am.jp/signaling
-[1044:046][5420] (sora_signaling.cpp:629): Failed Websocket handshake: system:10060
-[1044:046][5420] (sora_signaling.cpp:1140): Failed to Disconnect: message=Failed Websocket handshake: last_ec=接続済みの呼び出し先が一定の時間を過ぎても正しく応答しなかったため、接続できませんでした。または接続済みのホストが応答しなかったため、確立された接続は失敗しました。 last_url=wss://sora.ikeilabsora.0am.jp/signaling
-[1044:046][5420] (websocket.cpp:92): Websocket::~Websocket this=edac06d0
-[1044:046][5420] (data_channel.cpp:19): dtor DataChannel
-[1044:046][5420] (sora.cpp:666): OnDisconnect: Failed Websocket handshake: last_ec=接続済みの呼び出し先が一定の時間を過ぎても正しく応答しなかったため、接続できませんでした。または接続済みのホストが応答しなかったため、確立された接続は失敗しました。 last_url=wss://sora.ikeilabsora.0am.jp/signaling
-[1044:046][5420] (sora.cpp:405): io_context finished
-[1044:046][5420] (thread.cc:706): Message to Sora IO Thread took 21072ms to dispatch. Posted from: PostTask@../../webrtc/webrtc/src/rtc_base/thread.cc:1095
+[067:992][1848] (audio_processing_impl.cc:300): Denormal disabler: supported
+[067:993][1848] (webrtc_voice_engine.cc:314): WebRtcVoiceEngine::WebRtcVoiceEngine
+[067:993][20240] (webrtc_voice_engine.cc:336): WebRtcVoiceEngine::Init
+[067:993][20240] (unity_audio_device.h:86): Init
+[067:993][20240] (audio_device_buffer.cc:65): AudioDeviceBuffer::ctor
+[067:993][20240] (audio_device_buffer.cc:65): AudioDeviceBuffer::ctor
+[067:995][20240] (unity_audio_device.h:77): RegisterAudioCallback
+[067:995][20240] (webrtc_voice_engine.cc:428): WebRtcVoiceEngine::ApplyOptions: AudioOptions {aec: 1, agc: 1, ns: 1, hf: 1, swap: 0, audio_jitter_buffer_max_packets: 200, audio_jitter_buffer_fast_accelerate: 0, audio_jitter_buffer_min_delay_ms: 0, audio_jitter_buffer_enable_rtx_handling: 0, }
+[067:995][20240] (webrtc_voice_engine.cc:529): Stereo swapping enabled? 0
+[067:995][20240] (webrtc_voice_engine.cc:534): NetEq capacity is 200
+[067:995][20240] (webrtc_voice_engine.cc:540): NetEq fast mode? 0
+[067:995][20240] (webrtc_voice_engine.cc:546): NetEq minimum delay is 0
+[067:995][20240] (webrtc_voice_engine.cc:552): NetEq handle reordered packets? 0
+[067:995][20240] (webrtc_voice_engine.cc:594): NS set to 1
+[067:995][20240] (audio_processing_impl.cc:506): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 1, level: High }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, dry_run: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, vad_reset_period_ms: 1500, adjacent_speech_frames_threshold: 12, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50}}
+[067:995][20240] (transparent_mode.cc:239): AEC3 Transparent Mode: Legacy
+[067:995][20240] (echo_canceller3.cc:795): AEC3 created with sample rate: 16000 Hz, num render channels: 1, num capture channels: 1
+[067:995][20240] (clipping_predictor.cc:357): [agc] Clipping prediction disabled.
+[067:995][20240] (agc_manager_direct.cc:496): [agc] Min mic level: 12 (overridden: no)
+[067:995][1848] (sora.cpp:308): Start Signaling: cc={"unity_version":"2021.2.11f1","signaling_url":["ws://192.168.11.64:5000/signaling"],"channel_id":"chair-control","client_id":"","metadata":"","role":"recvonly","enable_multistream":true,"multistream":true,"enable_spotlight":false,"spotlight":false,"spotlight_number":0,"spotlight_focus_rid":"","spotlight_unfocus_rid":"","enable_simulcast":false,"simulcast":false,"simulcast_rid":"","capturer_type":1,"unity_camera_texture":1950480341176,"video_capturer_device":"","video":false,"audio":true,"video_width":640,"video_height":480,"video_codec_type":"VP9","video_bit_rate":0,"unity_audio_input":true,"unity_audio_output":false,"audio_recording_device":"","audio_playout_device":"","audio_codec_type":"OPUS","audio_bit_rate":0,"enable_data_channel_signaling":true,"data_channel_signaling":true,"data_channel_signaling_timeout":180,"enable_ignore_disconnect_websocket":false,"ignore_disconnect_websocket":false,"disconnect_wait_timeout":5,"data_channels":[{"label":"#sora-devtools","direction":"recvonly","enable_ordered":true,"ordered":true,"enable_max_packet_life_time":false,"max_packet_life_time":0,"enable_max_retransmits":false,"max_retransmits":0,"enable_protocol":false,"protocol":"","enable_compress":true,"compress":false}],"insecure":false,"bundle_id":"","proxy_url":"","proxy_username":"","proxy_password":"","proxy_agent":""}
+[067:995][1848] (sora_signaling.cpp:37): SoraSignaling::Connect
+[067:995][18900] (sora.cpp:403): io_context started
+[067:996][18900] (websocket.cpp:185): host=192.168.11.64:5000 resolved=192.168.11.64:5000
+[089:028][18900] (sora_signaling.cpp:617): OnConnect url=ws://192.168.11.64:5000/signaling
+[089:028][18900] (sora_signaling.cpp:629): Failed Websocket handshake: system:10060
+[089:028][18900] (sora_signaling.cpp:1140): Failed to Disconnect: message=Failed Websocket handshake: last_ec=接続済みの呼び出し先が一定の時間を過ぎても正しく応答しなかったため、接続できませんでした。または接続済みのホストが応答しなかったため、確立された接続は失敗しました。 last_url=ws://192.168.11.64:5000/signaling
+[089:028][18900] (websocket.cpp:92): Websocket::~Websocket this=444be060
+[089:028][18900] (data_channel.cpp:19): dtor DataChannel
+[089:028][18900] (sora.cpp:666): OnDisconnect: Failed Websocket handshake: last_ec=接続済みの呼び出し先が一定の時間を過ぎても正しく応答しなかったため、接続できませんでした。または接続済みのホストが応答しなかったため、確立された接続は失敗しました。 last_url=ws://192.168.11.64:5000/signaling
+[089:028][18900] (sora.cpp:405): io_context finished
+[089:028][18900] (thread.cc:706): Message to Sora IO Thread took 21033ms to dispatch. Posted from: PostTask@../../webrtc/webrtc/src/rtc_base/thread.cc:1095
+[114:116][1848] (sora.cpp:162): Sora::Connect {"unity_version":"2021.2.11f1","signaling_url":["ws://192.168.11.64:5000/signaling"],"channel_id":"chair-control","client_id":"","metadata":"","role":"recvonly","enable_multistream":true,"multistream":true,"enable_spotlight":false,"spotlight":false,"spotlight_number":0,"spotlight_focus_rid":"","spotlight_unfocus_rid":"","enable_simulcast":false,"simulcast":false,"simulcast_rid":"","capturer_type":1,"unity_camera_texture":1950480348600,"video_capturer_device":"","video":false,"audio":true,"video_width":640,"video_height":480,"video_codec_type":"VP9","video_bit_rate":0,"unity_audio_input":true,"unity_audio_output":false,"audio_recording_device":"","audio_playout_device":"","audio_codec_type":"OPUS","audio_bit_rate":0,"enable_data_channel_signaling":true,"data_channel_signaling":true,"data_channel_signaling_timeout":180,"enable_ignore_disconnect_websocket":false,"ignore_disconnect_websocket":false,"disconnect_wait_timeout":5,"data_channels":[{"label":"#sora-devtools","direction":"recvonly","enable_ordered":true,"ordered":true,"enable_max_packet_life_time":false,"max_packet_life_time":0,"enable_max_retransmits":false,"max_retransmits":0,"enable_protocol":false,"protocol":"","enable_compress":true,"compress":false}],"insecure":false,"bundle_id":"","proxy_url":"","proxy_username":"","proxy_password":"","proxy_agent":""}
+[114:225][1848] (nvcodec_h264_encoder.cpp:556): sora::NvCodecH264EncoderImpl::CreateEncoder framerate:30 bitrate_bps:100000 maxBitRate:500000
+[114:362][1848] (audio_processing_impl.cc:291): Injected APM submodules:
+Echo control factory: 0
+Echo detector: 0
+Capture analyzer: 0
+Capture post processor: 0
+Render pre processor: 0
+[114:362][1848] (audio_processing_impl.cc:300): Denormal disabler: supported
+[114:362][1848] (webrtc_voice_engine.cc:314): WebRtcVoiceEngine::WebRtcVoiceEngine
+[114:362][15660] (webrtc_voice_engine.cc:336): WebRtcVoiceEngine::Init
+[114:362][15660] (unity_audio_device.h:86): Init
+[114:362][15660] (audio_device_buffer.cc:65): AudioDeviceBuffer::ctor
+[114:362][15660] (audio_device_buffer.cc:65): AudioDeviceBuffer::ctor
+[114:364][15660] (unity_audio_device.h:77): RegisterAudioCallback
+[114:364][15660] (webrtc_voice_engine.cc:428): WebRtcVoiceEngine::ApplyOptions: AudioOptions {aec: 1, agc: 1, ns: 1, hf: 1, swap: 0, audio_jitter_buffer_max_packets: 200, audio_jitter_buffer_fast_accelerate: 0, audio_jitter_buffer_min_delay_ms: 0, audio_jitter_buffer_enable_rtx_handling: 0, }
+[114:364][15660] (webrtc_voice_engine.cc:529): Stereo swapping enabled? 0
+[114:364][15660] (webrtc_voice_engine.cc:534): NetEq capacity is 200
+[114:364][15660] (webrtc_voice_engine.cc:540): NetEq fast mode? 0
+[114:364][15660] (webrtc_voice_engine.cc:546): NetEq minimum delay is 0
+[114:364][15660] (webrtc_voice_engine.cc:552): NetEq handle reordered packets? 0
+[114:364][15660] (webrtc_voice_engine.cc:594): NS set to 1
+[114:364][15660] (audio_processing_impl.cc:506): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 1, level: High }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, dry_run: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, vad_reset_period_ms: 1500, adjacent_speech_frames_threshold: 12, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50}}
+[114:364][15660] (transparent_mode.cc:239): AEC3 Transparent Mode: Legacy
+[114:364][15660] (echo_canceller3.cc:795): AEC3 created with sample rate: 16000 Hz, num render channels: 1, num capture channels: 1
+[114:364][15660] (clipping_predictor.cc:357): [agc] Clipping prediction disabled.
+[114:364][15660] (agc_manager_direct.cc:496): [agc] Min mic level: 12 (overridden: no)
+[114:364][1848] (sora.cpp:308): Start Signaling: cc={"unity_version":"2021.2.11f1","signaling_url":["ws://192.168.11.64:5000/signaling"],"channel_id":"chair-control","client_id":"","metadata":"","role":"recvonly","enable_multistream":true,"multistream":true,"enable_spotlight":false,"spotlight":false,"spotlight_number":0,"spotlight_focus_rid":"","spotlight_unfocus_rid":"","enable_simulcast":false,"simulcast":false,"simulcast_rid":"","capturer_type":1,"unity_camera_texture":1950480348600,"video_capturer_device":"","video":false,"audio":true,"video_width":640,"video_height":480,"video_codec_type":"VP9","video_bit_rate":0,"unity_audio_input":true,"unity_audio_output":false,"audio_recording_device":"","audio_playout_device":"","audio_codec_type":"OPUS","audio_bit_rate":0,"enable_data_channel_signaling":true,"data_channel_signaling":true,"data_channel_signaling_timeout":180,"enable_ignore_disconnect_websocket":false,"ignore_disconnect_websocket":false,"disconnect_wait_timeout":5,"data_channels":[{"label":"#sora-devtools","direction":"recvonly","enable_ordered":true,"ordered":true,"enable_max_packet_life_time":false,"max_packet_life_time":0,"enable_max_retransmits":false,"max_retransmits":0,"enable_protocol":false,"protocol":"","enable_compress":true,"compress":false}],"insecure":false,"bundle_id":"","proxy_url":"","proxy_username":"","proxy_password":"","proxy_agent":""}
+[114:365][1848] (sora_signaling.cpp:37): SoraSignaling::Connect
+[114:365][672] (sora.cpp:403): io_context started
+[114:365][672] (websocket.cpp:185): host=192.168.11.64:5000 resolved=192.168.11.64:5000
+[135:409][672] (sora_signaling.cpp:617): OnConnect url=ws://192.168.11.64:5000/signaling
+[135:409][672] (sora_signaling.cpp:629): Failed Websocket handshake: system:10060
+[135:409][672] (sora_signaling.cpp:1140): Failed to Disconnect: message=Failed Websocket handshake: last_ec=接続済みの呼び出し先が一定の時間を過ぎても正しく応答しなかったため、接続できませんでした。または接続済みのホストが応答しなかったため、確立された接続は失敗しました。 last_url=ws://192.168.11.64:5000/signaling
+[135:409][672] (websocket.cpp:92): Websocket::~Websocket this=f938e960
+[135:409][672] (data_channel.cpp:19): dtor DataChannel
+[135:409][672] (sora.cpp:666): OnDisconnect: Failed Websocket handshake: last_ec=接続済みの呼び出し先が一定の時間を過ぎても正しく応答しなかったため、接続できませんでした。または接続済みのホストが応答しなかったため、確立された接続は失敗しました。 last_url=ws://192.168.11.64:5000/signaling
+[135:409][672] (sora.cpp:405): io_context finished
+[135:409][672] (thread.cc:706): Message to Sora IO Thread took 21044ms to dispatch. Posted from: PostTask@../../webrtc/webrtc/src/rtc_base/thread.cc:1095
+[144:595][1848] (sora.cpp:162): Sora::Connect {"unity_version":"2021.2.11f1","signaling_url":["ws://192.168.11.64:5000/signaling"],"channel_id":"chair-control","client_id":"","metadata":"","role":"recvonly","enable_multistream":true,"multistream":true,"enable_spotlight":false,"spotlight":false,"spotlight_number":0,"spotlight_focus_rid":"","spotlight_unfocus_rid":"","enable_simulcast":false,"simulcast":false,"simulcast_rid":"","capturer_type":1,"unity_camera_texture":1949573837176,"video_capturer_device":"","video":false,"audio":true,"video_width":640,"video_height":480,"video_codec_type":"VP9","video_bit_rate":0,"unity_audio_input":true,"unity_audio_output":false,"audio_recording_device":"","audio_playout_device":"","audio_codec_type":"OPUS","audio_bit_rate":0,"enable_data_channel_signaling":true,"data_channel_signaling":true,"data_channel_signaling_timeout":180,"enable_ignore_disconnect_websocket":false,"ignore_disconnect_websocket":false,"disconnect_wait_timeout":5,"data_channels":[{"label":"#sora-devtools","direction":"recvonly","enable_ordered":true,"ordered":true,"enable_max_packet_life_time":false,"max_packet_life_time":0,"enable_max_retransmits":false,"max_retransmits":0,"enable_protocol":false,"protocol":"","enable_compress":true,"compress":false}],"insecure":false,"bundle_id":"","proxy_url":"","proxy_username":"","proxy_password":"","proxy_agent":""}
+[144:718][1848] (nvcodec_h264_encoder.cpp:556): sora::NvCodecH264EncoderImpl::CreateEncoder framerate:30 bitrate_bps:100000 maxBitRate:500000
+[144:858][1848] (audio_processing_impl.cc:291): Injected APM submodules:
+Echo control factory: 0
+Echo detector: 0
+Capture analyzer: 0
+Capture post processor: 0
+Render pre processor: 0
+[144:858][1848] (audio_processing_impl.cc:300): Denormal disabler: supported
+[144:858][1848] (webrtc_voice_engine.cc:314): WebRtcVoiceEngine::WebRtcVoiceEngine
+[144:859][3488] (webrtc_voice_engine.cc:336): WebRtcVoiceEngine::Init
+[144:859][3488] (unity_audio_device.h:86): Init
+[144:859][3488] (audio_device_buffer.cc:65): AudioDeviceBuffer::ctor
+[144:859][3488] (audio_device_buffer.cc:65): AudioDeviceBuffer::ctor
+[144:861][3488] (unity_audio_device.h:77): RegisterAudioCallback
+[144:861][3488] (webrtc_voice_engine.cc:428): WebRtcVoiceEngine::ApplyOptions: AudioOptions {aec: 1, agc: 1, ns: 1, hf: 1, swap: 0, audio_jitter_buffer_max_packets: 200, audio_jitter_buffer_fast_accelerate: 0, audio_jitter_buffer_min_delay_ms: 0, audio_jitter_buffer_enable_rtx_handling: 0, }
+[144:861][3488] (webrtc_voice_engine.cc:529): Stereo swapping enabled? 0
+[144:861][3488] (webrtc_voice_engine.cc:534): NetEq capacity is 200
+[144:861][3488] (webrtc_voice_engine.cc:540): NetEq fast mode? 0
+[144:861][3488] (webrtc_voice_engine.cc:546): NetEq minimum delay is 0
+[144:861][3488] (webrtc_voice_engine.cc:552): NetEq handle reordered packets? 0
+[144:861][3488] (webrtc_voice_engine.cc:594): NS set to 1
+[144:861][3488] (audio_processing_impl.cc:506): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 1, level: High }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, dry_run: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, vad_reset_period_ms: 1500, adjacent_speech_frames_threshold: 12, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50}}
+[144:861][3488] (transparent_mode.cc:239): AEC3 Transparent Mode: Legacy
+[144:861][3488] (echo_canceller3.cc:795): AEC3 created with sample rate: 16000 Hz, num render channels: 1, num capture channels: 1
+[144:861][3488] (clipping_predictor.cc:357): [agc] Clipping prediction disabled.
+[144:861][3488] (agc_manager_direct.cc:496): [agc] Min mic level: 12 (overridden: no)
+[144:861][1848] (sora.cpp:308): Start Signaling: cc={"unity_version":"2021.2.11f1","signaling_url":["ws://192.168.11.64:5000/signaling"],"channel_id":"chair-control","client_id":"","metadata":"","role":"recvonly","enable_multistream":true,"multistream":true,"enable_spotlight":false,"spotlight":false,"spotlight_number":0,"spotlight_focus_rid":"","spotlight_unfocus_rid":"","enable_simulcast":false,"simulcast":false,"simulcast_rid":"","capturer_type":1,"unity_camera_texture":1949573837176,"video_capturer_device":"","video":false,"audio":true,"video_width":640,"video_height":480,"video_codec_type":"VP9","video_bit_rate":0,"unity_audio_input":true,"unity_audio_output":false,"audio_recording_device":"","audio_playout_device":"","audio_codec_type":"OPUS","audio_bit_rate":0,"enable_data_channel_signaling":true,"data_channel_signaling":true,"data_channel_signaling_timeout":180,"enable_ignore_disconnect_websocket":false,"ignore_disconnect_websocket":false,"disconnect_wait_timeout":5,"data_channels":[{"label":"#sora-devtools","direction":"recvonly","enable_ordered":true,"ordered":true,"enable_max_packet_life_time":false,"max_packet_life_time":0,"enable_max_retransmits":false,"max_retransmits":0,"enable_protocol":false,"protocol":"","enable_compress":true,"compress":false}],"insecure":false,"bundle_id":"","proxy_url":"","proxy_username":"","proxy_password":"","proxy_agent":""}
+[144:861][1848] (sora_signaling.cpp:37): SoraSignaling::Connect
+[144:861][5344] (sora.cpp:403): io_context started
+[144:862][5344] (websocket.cpp:185): host=192.168.11.64:5000 resolved=192.168.11.64:5000
+[165:889][5344] (sora_signaling.cpp:617): OnConnect url=ws://192.168.11.64:5000/signaling
+[165:889][5344] (sora_signaling.cpp:629): Failed Websocket handshake: system:10060
+[165:889][5344] (sora_signaling.cpp:1140): Failed to Disconnect: message=Failed Websocket handshake: last_ec=接続済みの呼び出し先が一定の時間を過ぎても正しく応答しなかったため、接続できませんでした。または接続済みのホストが応答しなかったため、確立された接続は失敗しました。 last_url=ws://192.168.11.64:5000/signaling
+[165:889][5344] (websocket.cpp:92): Websocket::~Websocket this=422bdbc0
+[165:889][5344] (data_channel.cpp:19): dtor DataChannel
+[165:889][5344] (sora.cpp:666): OnDisconnect: Failed Websocket handshake: last_ec=接続済みの呼び出し先が一定の時間を過ぎても正しく応答しなかったため、接続できませんでした。または接続済みのホストが応答しなかったため、確立された接続は失敗しました。 last_url=ws://192.168.11.64:5000/signaling
+[165:889][5344] (sora.cpp:405): io_context finished
+[165:889][5344] (thread.cc:706): Message to Sora IO Thread took 21028ms to dispatch. Posted from: PostTask@../../webrtc/webrtc/src/rtc_base/thread.cc:1095

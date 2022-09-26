@@ -139,7 +139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &134462883
 Transform:
   m_ObjectHideFlags: 0
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 1089080908}
   ChannelID: chair-control
-  SignalingUrl: wss://sora.ikeilabsora.0am.jp/signaling
+  SignalingUrl: ws://192.168.11.64:5000/signaling
   dataChannelLabel: '#sora-devtools'
 --- !u!1 &203677779
 GameObject:
@@ -281,7 +281,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &496819144
 Transform:
   m_ObjectHideFlags: 0
@@ -456,7 +456,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1393696821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -464,7 +464,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1393696820}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9c49b2ed24372e94b92b30995b4bb5b6, type: 3}
   m_Name: 
@@ -530,9 +530,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   command: 0
-  lift: 7
-  roll: -2
-  pitch: -1.5
+  lift: 4
+  roll: -1.5
+  pitch: -0.1
   offsetMotor1: 0
   offsetMotor2: 0
   offsetMotor3: 0
